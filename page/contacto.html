@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DLV DISTRIBUIDORA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f7ee3d52b2.js"
+      crossorigin="anonymous"></script>
+    <script src="./js/cart.js" defer></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+
+    <header class="fondoHeader">
+      <div>
+        <a href="../index.html">
+          <img src="../assets/img/logo-DLV12.jpeg" alt="logo" />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="./nosotros.html">nosotros</a></li>
+          <li><a href="./envios.html">envios</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Logo</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./page/productos.html">producto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h3 class="Contacto">CONTACTO</h3>
+
+      <section>
+        <h4>Envianos un mensaje</h4>
+        <form action="">
+          <fieldset>
+            <div>
+              <label for="email">tu mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="correo@corre.com"
+                required />
+            </div>
+            <div>
+              <label for="mensaje">tu mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="dejanos tu mensaje"
+                required></textarea>
+            </div>
+
+            <div>
+              <label for="celular">tu celu </label>
+              <input type="tel" name="celular" id="celular" />
+            </div>
+            <input type="submit" value="Enviar mensaje" />
+            <p>Dejanos tu mensaje y te responderemos a la brevedad</p>
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <h4>Donde estamos</h4>
+        <p>Estamos en la calle falsa 1234</p>
+        <p>Telefono: 123456789</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d365.2816908552419!2d-66.87740572895663!3d-29.423982758557095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1729551635543!5m2!1ses-419!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+    <footer class="fondoFooter">
+      <p>DLV DISTRIBUIDORA.srl</p>
+      <p>2024 todos los derechos reservados</p>
+      <a href="../page/contacto.html">CONTACTO</a>
+
+      <div class="redesSociales">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../assets/img/face.png" alt="logoFacebook" />
+        </a>
+        <a href="https://www.instagram.com/?hl=es" target="_blank">
+          <img src="../assets/img/intagram.png" alt="logoInstagram" />
+        </a>
+        <a href="https://web.whatsapp.com/" target="_blank">
+          <img src="../assets/img/whatapp.png" alt="logoWhatsapp" />
+        </a>
+      </div>
+      <h6>&#169;Copyringt 2024</h6>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

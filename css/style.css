@@ -1,0 +1,419 @@
+/* Estilos generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del encabezado */
+header {
+  display: flexbox;
+  background-color: #ffffff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegación del encabezado */
+header nav ul li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 0;
+  margin: 0px 0;
+}
+
+header nav ul li {
+  padding: 10px 20px; /* Añade padding a los elementos de la lista */
+  margin: 0 10px; /* Añade margen a los elementos de la lista */
+}
+header nav ul li {
+  display: inline;
+  
+}
+
+header nav ul li a {
+  color: #070707;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  justify-content: center;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* Estilos del contenido principal */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.logo-container a {
+  margin: 0 10px;
+}
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Icono del carrito */
+.cart-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cart-icon img {
+  width: 40px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+}
+
+/* Sección de categorías */
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.categoria img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.categoria img:hover {
+  transform: scale(1.05);
+}
+
+.categoria h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Sección de productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  alaing-items: center;
+}
+
+.producto {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.producto p {
+  font-size: 16px;
+  color: #666;
+  flex-grow: 1;
+
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del pie de página */
+.fondoFooter {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.fondoFooter p,
+.fondoFooter a {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Redes sociales en el pie de página */
+.fondoFooter .redesSociales {
+  margin: 10px 0;
+}
+
+.fondoFooter .redesSociales a {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.fondoFooter .redesSociales a img {
+  width: 24px;
+  height: 24px;
+}
+
+.fondoFooter .redesSociales a:hover {
+  transform: scale(1.2);
+}
+
+.boton {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos de la sección de envíos */
+.envios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.envio {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.envio img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.envio h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.envio p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .envios {
+    flex-direction: column;
+  }
+
+  .envio {
+    padding: 10px;
+  }
+
+  .envio img {
+    width: 40px;
+  }
+
+  .envio h3 {
+    font-size: 18px;
+  }
+
+  .envio p {
+    font-size: 14px;
+  }
+}
+
+/* Estilos de la sección de contacto */
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.contacto h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  font-size: 16px;
+  color: #666;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.contacto form input,
+.contacto form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.contacto form input {
+  width: 100%;
+}
+
+.contacto form textarea {
+  width: 100%;
+}
+
+.contacto form button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contacto form button:hover {
+  background-color: #ff6347;
+}
+
+/* Estilos de la sección de ubicación */
+.ubicacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.ubicacion h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ubicacion p {
+  font-size: 16px;
+  color: #666;
+}
+
+.ubicacion img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Estilos de la sección de comentarios */
+.comentarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.comentario {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comentario h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.comentario p {
+  font-size: 16px;
+  color: #666;
+}
+
+.comentario:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del carrusel */
+.carousel {
+  max-width: 500px; /* Ajusta el ancho máximo del carrusel */
+  margin: 20px auto; /* Centra el carrusel horizontalmente y añade margen superior e inferior */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+}
+
+.carousel-inner {
+  border-radius: 10px; /* Bordes redondeados para las imágenes dentro del carrusel */
+}
+
+.carousel img {
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del carrusel */
+  height: 500px; /* Mantiene la proporción de las imágenes */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 20px; /* Bordes redondeados */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Cambia el color de los iconos de control a blanco */
+}
