@@ -8,6 +8,31 @@ body {
   box-sizing: border-box;
 }
 
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0; /* Elimina el padding del ul */
+  margin: 0; /* Elimina el margen del ul */
+}
+
+header nav ul li {
+  padding: 10px 20px; /* Añade padding a los elementos de la lista */
+  margin: 0 10px; /* Añade margen a los elementos de la lista */
+}
+
+header nav ul li a {
+  color: #070707;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff6347;
+}
+
 /* Estilos del encabezado */
 header {
   display: flexbox;

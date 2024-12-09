@@ -1,0 +1,7 @@
+
+// Define your mixins here
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

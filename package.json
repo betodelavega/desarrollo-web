@@ -4,16 +4,18 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
+    "start": "live-server",
+    "sass": "sass --watch styles.scss:styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "sass": "^1.82.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"
-  }
+  },
+  "description": ""
 }
